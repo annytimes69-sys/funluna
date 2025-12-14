@@ -1,112 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="robots" content="noindex">
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alina — Writer, Musician, Visionary</title>
-  <meta name="description" content="A multidisciplinary artist exploring prose, ambient sound, and visual performance." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ACCESS GATE</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #0a0a0a;
-      color: #f8f8f8;
-      line-height: 1.7;
-      padding: 2rem 1.5rem;
-      max-width: 800px;
-      margin: 0 auto;
+      background: #000;
+      color: #ccc;
+      font-family: 'Courier New', monospace;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     h1 {
-      font-weight: 300;
-      font-size: 2.3rem;
-      margin: 1.5rem 0 0.5rem;
-      background: linear-gradient(90deg, #c9a36b, #e8d7b5);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
+      font-size: 2rem;
+      margin-bottom: 2.5rem;
+      letter-spacing: 4px;
+      color: #888;
     }
-    .subtitle {
-      font-size: 1.1rem;
-      opacity: 0.85;
-      margin-bottom: 2rem;
+    .input-group {
+      margin-bottom: 1.5rem;
     }
-    .photo {
-      width: 100%;
-      border-radius: 12px;
-      margin: 1.5rem 0;
-      border: 1px solid #333;
-    }
-    .about {
-      margin: 2rem 0;
-      font-size: 1.05rem;
-      line-height: 1.8;
-    }
-    .buttons {
-      display: grid;
-      gap: 1rem;
-      margin: 1.5rem 0;
-    }
-    .btn {
-      display: inline-block;
-      background: #1a1a1a;
-      color: #c9a36b;
-      padding: 0.9rem 1.5rem;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: 500;
-      font-size: 1.05rem;
+    input {
+      background: transparent;
+      border: 1px solid #444;
+      color: white;
+      padding: 12px 20px;
+      font-size: 1.3rem;
+      letter-spacing: 3px;
       text-align: center;
-      border: 1px solid #333;
-      transition: background 0.2s, color 0.2s;
+      width: 180px;
+      outline: none;
     }
-    .btn:hover {
-      background: #2a2a2a;
-      color: #e8d7b5;
+    input:focus {
+      border-color: #666;
     }
-    @media (max-width: 600px) {
-      body { padding: 1.5rem 1rem; }
-      h1 { font-size: 1.9rem; }
+    button {
+      background: transparent;
+      border: 1px solid #555;
+      color: #aaa;
+      padding: 12px 32px;
+      font-family: 'Courier New', monospace;
+      font-size: 1.1rem;
+      letter-spacing: 2px;
+      cursor: not-allowed;
+      opacity: 0.5;
+      transition: all 0.3s;
+    }
+    button.active {
+      cursor: pointer;
+      opacity: 1;
+      border-color: #888;
+      color: #fff;
+    }
+    button.active:hover {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: #bbb;
     }
   </style>
 </head>
 <body>
-
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105814767', 'ym');
-
-    ym(105814767, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/105814767" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-
-
-
-  <h1>Alina</h1>
-  <div class="subtitle">Writer • Composer • Visual Performer • Сhef </div>
-
-  <!-- Замените на ваше фото: alina.jpg -->
-  <img src="alina.jpg" alt="Alina — multidisciplinary artist" class="photo">
-
-  <div class="about">
-    I don’t fit in a single box.  
-    <br><br>
-    By day, I write short fiction about longing, silence, and the space between people.  
-    <br><br>
-    By night, I compose ambient soundscapes for those who think in the dark.  
-    <br><br>
-    And in between — I explore the boundaries of visual performance, where art meets presence.
+  <h1>ACCESS CODE REQUIRED</h1>
+  
+  <div class="input-group">
+    <input 
+      type="text" 
+      id="codeInput" 
+      maxlength="4" 
+      placeholder="CODE" 
+      autocomplete="off"
+      autofocus
+    >
   </div>
 
-  <div class="buttons">
-    <a href="https://www.wattpad.com/user/Lunamvs" target="_blank" class="btn">📖 Short Fiction</a>
-    <a href="https://t.me/+9DHwD1z9c7I1MTMy" target="_blank" class="btn">🎧 Ambient Sound + Story telegram channel</a>
-    <a href="nuit.html" target="_blank" class="btn">📸 Photography - Visual Journal</a>
-  </div>
+  <button id="enterBtn" disabled>
+    → ENTER
+  </button>
+
+  <script>
+    // Здесь задаём соответствие кодов и URL
+    const accessMap = {
+      '2077': '2077.html',
+      'LUNA': 'https://beacons.ai/lunamv',
+      'ALIN': 'https://example.com/secret-alina',
+      'STAR': 'https://example.com/star-room'
+      // добавляйте сколько угодно пар
+    };
+
+    const input = document.getElementById('codeInput');
+    const button = document.getElementById('enterBtn');
+
+    input.addEventListener('input', () => {
+      const val = input.value.trim().toUpperCase(); // приводим к одному регистру для удобства
+      if (accessMap[val]) {
+        button.classList.add('active');
+        button.disabled = false;
+      } else {
+        button.classList.remove('active');
+        button.disabled = true;
+      }
+    });
+
+    button.addEventListener('click', () => {
+      const val = input.value.trim().toUpperCase();
+      const targetUrl = accessMap[val];
+      if (targetUrl) {
+        window.location.href = targetUrl;
+      }
+    });
+
+    // Поддержка Enter
+    input.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        const val = input.value.trim().toUpperCase();
+        const targetUrl = accessMap[val];
+        if (targetUrl) {
+          window.location.href = targetUrl;
+        }
+      }
+    });
+  </script>
 </body>
 </html>
