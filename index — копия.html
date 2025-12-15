@@ -64,27 +64,6 @@
       background: rgba(255, 255, 255, 0.05);
       border-color: #bbb;
     }
-
-    /* Стиль для подсказки — яркая, читаемая */
-.hint {
-  margin-top: 2rem;
-  font-size: 0.85rem;
-  color: #bbb; /* светло-серый, почти белый, но не режет глаз */
-  max-width: 400px;
-  line-height: 1.5;
-  text-align: center;
-}
-
-/* Стиль для копирайта — тихий, ненавязчивый */
-.copyright {
-  margin-top: 1.5rem;
-  font-size: 0.85rem;
-  color: #666; /* тёмно-серый */
-  max-width: 400px;
-  line-height: 1.5;
-  text-align: center;
-  opacity: 0.6;
-}
   </style>
 </head>
 <body>
@@ -94,7 +73,7 @@
     <input 
       type="text" 
       id="codeInput" 
-      maxlength="10" 
+      maxlength="4" 
       placeholder="CODE" 
       autocomplete="off"
       autofocus
@@ -105,32 +84,21 @@
     → ENTER
   </button>
 
-  <!-- Памятка для новых пользователей -->
-  <div class="hint">
-    If you're new here and don’t know the codes — enter <strong>part1</strong>
-  </div>
-
-  <!-- Авторские права -->
-  <div class="copyright">
-   All rights reserved.<br>
-    Unauthorized copying or commercial use is prohibited.
-  </div>
-
   <script>
-    // Соответствие кодов и URL
+    // Здесь задаём соответствие кодов и URL
     const accessMap = {
       '2077': '2077.html',
       '5583': 'choices.html',
-      'PART1': 'part1.html', // первая часть
       'ALIN': 'https://example.com/secret-alina',
       'STAR': 'https://example.com/star-room'
+      // добавляйте сколько угодно пар
     };
 
     const input = document.getElementById('codeInput');
     const button = document.getElementById('enterBtn');
 
     input.addEventListener('input', () => {
-      const val = input.value.trim().toUpperCase();
+      const val = input.value.trim().toUpperCase(); // приводим к одному регистру для удобства
       if (accessMap[val]) {
         button.classList.add('active');
         button.disabled = false;
@@ -148,6 +116,7 @@
       }
     });
 
+    // Поддержка Enter
     input.addEventListener('keypress', (e) => {
       if (e.key === 'Enter') {
         const val = input.value.trim().toUpperCase();
