@@ -26,7 +26,6 @@
     }
     img {
       width: 100%;
-      
       border-radius: 8px;
       margin: 0 0 2.5rem;
     }
@@ -35,53 +34,31 @@
       text-align: left;
       margin: 2.5rem 0;
     }
-    .about p, .about br {
-      margin: 0.8rem 0;
-    }
     .choices {
       display: flex;
       flex-direction: column;
       gap: 16px;
       margin: 0 0 2.5rem;
     }
-    .choices a {
+    .choices a,
+    .ghost-story-btn {
       background: transparent;
       border: 1px solid #444;
       color: #ccc;
-      padding: 14px;
+      padding: 14px 32px;
       text-decoration: none;
       font-family: 'Courier New', monospace;
       letter-spacing: 1px;
       transition: all 0.3s;
+      display: inline-block;
+      margin-top: 1.5rem;
     }
-    .choices a:hover {
+    .choices a:hover,
+    .ghost-story-btn:hover {
       border-color: #888;
       color: white;
       background: rgba(255,255,255,0.03);
     }
-
-    /* Кнопка с градиентом от чёрного к белому */
-    .magic-link {
-      display: inline-block;
-      padding: 14px 32px;
-      background: linear-gradient(135deg, #c9a36b, #ffffff);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      text-decoration: none;
-      font-family: 'Courier New', monospace;
-      font-weight: bold;
-      letter-spacing: 1px;
-      border: 1px solid #c9a36b;
-      border-radius: 4px;
-      transition: all 0.3s;
-      cursor: pointer;
-    }
-    .magic-link:hover {
-      border-color: #aaa;
-      box-shadow: 0 0 12px rgba(255,255,255,0.1);
-    }
-
     .note {
       color: #777;
       font-size: 0.9rem;
@@ -94,37 +71,31 @@
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
-    (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105814767', 'ym');
-
-    ym(105814767, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+  (function(m,e,t,r,i,k,a){
+    m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+  })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105814767', 'ym');
+  ym(105814767, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/105814767" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
-
-
 <h1>The Ghost in the Code: A 2077 Story — Final Choice</h1>
-  <!-- 1. Картинка -->
-  <img src="choices.png" alt="Alina — NUIT">
+<img src="choices.png" alt="Alina — NUIT">
 
-  <!-- 2. Кнопки с концовками -->
-  <h1>Choose your truth:</h1>
-  <div class="choices">
-    <a href="finale-1.html">She’s free. I let her go.</a>
-    <a href="finale-2.html">She’s still trapped. I must follow.</a>
-    <a href="finale-3.html">She never died. It was a plan.</a>
-    <a href="finale-4.html">I am part of Echo. We were never real.</a>
-    <a href="finale-5.html">Covid-2077 is a myth. We’re both alive.</a>
-    <a href="finale-secret.html">You are Leo. The story is you.</a>
-  </div>
+<h1>Choose your truth:</h1>
+<div class="choices">
+  <a href="finale-1.html">She’s free. I let her go.</a>
+  <a href="finale-2.html">She’s still trapped. I must follow.</a>
+  <a href="finale-3.html">She never died. It was a plan.</a>
+  <a href="finale-4.html">I am part of Echo. We were never real.</a>
+  <a href="finale-5.html">Covid-2077 is a myth. We’re both alive.</a>
+  <a href="finale-secret.html">You are Leo. The story is you.</a>
+</div>
 
-  <!-- 3. Блок "об авторе" -->
-  <div class="about">
+<div class="about">
   This page is the final chapter of a small creative experiment —<br>
   an interactive story about love, loss, and digital presence in 2077.<br>
   You didn’t just read it. You lived it.<br>
@@ -138,53 +109,25 @@
     Don’t worry. NUIT forgives even those who can’t stop.
   </span><br><br>
 
-<p style="margin-top: 1.5rem; color: #777; font-size: 0.95rem;">
-  If NUIT resonated with you—you can leave a star.<br>
-  Support via <strong>USDT (TRC20)⭐<br>
-  <code id="wallet" style="color: #aaa; background: rgba(255,255,255,0.05); padding: 4px 8px; border-radius: 3px; user-select: all;">TK69oBGD2MNkjYWB6r478jEiB4AMNk24t9</code>
-  <button id="copyBtn" class="nuit-button" style="margin-top: 8px; font-size: 1rem; padding: 8px 20px;">
-    → Copy wallet
-  </button>
-</p>
-
-  <h1>About the Author</h1>
-  I'm Alina.<br>
-  Musician, photographer, chef, creator, writer, creative performer.<br>
-  I don’t just perform—I create worlds.<br><br>
-
-  Every visual performance is a ritual I design from scratch: music, lighting, costume, mood,<br>
-  all designed from silence upward. I play piano, develop my own film, bake sourdough,<br>
-  and stitch my stage outfits by hand.<br><br>
-
-  When you enter, you're not watching.<br>
-  You're stepping into a space where intimacy becomes art and art becomes alive.<br><br>
-
-  This is where the story continues—not as a memory, but as a presence.<br>
-  Adults (18+) may step through.<br>
-  If you’re younger, stay with the words—they’ll keep you safe.<br><br>
-
-  If you’d like to experience the next act…
+  <p style="margin-top: 1.5rem; color: #777; font-size: 0.95rem;">
+    You survived the simulation. Now, leave a star.<br>
+    Support via <strong>USDT (TRC20)⭐</strong><br>
+    <code id="wallet" style="color: #aaa; background: rgba(255,255,255,0.05); padding: 4px 8px; border-radius: 3px; user-select: all;">TK69oBGD2MNkjYWB6r478jEiB4AMNk24t9</code>
+    <button id="copyBtn" style="margin-top: 8px; font-size: 1rem; padding: 8px 20px; background: transparent; border: 1px solid #555; color: #ccc; font-family: 'Courier New', monospace; letter-spacing: 1px;">
+      → Copy wallet
+    </button>
+  </p>
 </div>
 
-  <!-- 4. Кнопка на Stripchat -->
-  <div class="magic-link" id="secretLink">
-    🌙 Step into the dream
-  </div>
-<br>
-<br>
-<!-- Кнопка-ссылка на TinyURL -->
-<div class="magic-link" onclick="window.open('https://tinyurl.com/HeyBnnas', '_blank')">
-  Debug the Dream
-</div>
-  <div class="note">
-    Some ad blockers may block the first link. Disable if it doesn’t work.
-  </div>
+<!-- НОВАЯ КНОПКА: Mira v.4.2 — A Corporate Ghost Story -->
+<a href="alt.html" class="ghost-story-btn">
+  Mira v.4.2 — A Corporate Ghost Story
+</a>
 
-  <script>
-    document.getElementById('secretLink').onclick = function() {
-      window.open('https://go.strpjmp.com/?creativeId=&campaignId=&sourceId=&path=/HeyBananas&userId=940607813abf78bd0bbc9b0bb8d9090b01e246f4bd86c538362d2c5ee54a3fc2', '_blank');
-    };
-  </script>
+<div class="note">
+  Some ad blockers may block external links. Disable if it doesn’t work.
+</div>
+
 <script>
   document.getElementById('copyBtn').addEventListener('click', async () => {
     const wallet = document.getElementById('wallet').innerText;
@@ -199,5 +142,6 @@
     }
   });
 </script>
+
 </body>
 </html>
