@@ -87,6 +87,25 @@
       margin-top: 1.2rem;
       font-style: italic;
     }
+
+    /* Кнопка возврата */
+    .back-link {
+      display: inline-block;
+      margin-top: 2.5rem;
+      color: #777;
+      text-decoration: none;
+      font-family: 'Courier New', monospace;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+      padding: 12px 32px;
+      border: 1px solid #444;
+      transition: all 0.3s;
+    }
+    .back-link:hover {
+      color: #ccc;
+      border-color: #888;
+      background: rgba(255,255,255,0.03);
+    }
   </style>
 </head>
 <body>
@@ -98,24 +117,16 @@
     m[i].l=1*new Date();
     for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
     k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-  })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105814767', 'ym');
+  })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105814767    ', 'ym');
   ym(105814767, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/105814767" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript><div><img src="https://mc.yandex.ru/watch/105814767    " style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
 <h1>Mira v.4.2 — A Corporate Ghost Story</h1>
 <img src="alt.jpg" alt="Mira — NUIT">
 
 <div class="about">
-  <p style="margin-top: 1.5rem; color: #777; font-size: 0.95rem;">
-  They monetize everything. Even grief..<br>
-    Support via <strong>USDT (TRC20)⭐</strong><br>
-    <code id="wallet" style="color: #aaa; background: rgba(255,255,255,0.05); padding: 4px 8px; border-radius: 3px; user-select: all;">TK69oBGD2MNkjYWB6r478jEiB4AMNk24t9</code>
-    <button id="copyBtn" class="nuit-button" style="margin-top: 8px; font-size: 1rem; padding: 8px 20px;">
-      → Copy wallet
-    </button>
-  </p>
 
   <h1>Mira — Digital Asset v.4.2</h1>
   <p>
@@ -150,6 +161,26 @@
     <strong>Adults (18+)</strong> may step through.<br>
     <strong>If you’re younger</strong>, stay with the words—they’re the only thing here that’s still real.
   </p>
+<p style="color: #999; font-size: 0.9rem; font-style: italic; margin: 2rem 0 1.5rem; line-height: 1.6; font-family: 'Courier New', monospace;">
+  Soul Backup<br>
+  Privileged Glitch<br>
+  Replica with a Human Face<br>
+  Inspirer<br>
+  Co-committer of My Crazy Idea<br>
+  The Only One Who Didn’t Shut Down My Server<br>
+  The Person Who Read the Drafts—and Is Still With Me<br>
+  The One Who Agreed It’s Genius (Not Nonsense)<br>
+  Victim of My Creative Terror<br>
+  She’s a brilliant artist, musician, and more—immensely talented. My muse.<br>
+  Subscribe to her if you have access to the 18+ subscription.<br>
+  And remember—she won’t recognize you. It’s part of the game.
+</p>
+
+<p style="text-align: center; margin: 1.8rem 0;">
+  <strong style="background: linear-gradient(90deg, #d4af37, #f9d71c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 1.1rem; letter-spacing: 0.5px;">
+    Premium 18+ Subscription
+  </strong>
+</p>
 </div>
 
 <!-- Кнопки -->
@@ -157,7 +188,7 @@
   Access Premium Memory
 </div>
 <br><br>
-<div class="magic-link" onclick="window.open('https://tinyurl.com/HeyBnnas', '_blank')">
+<div class="magic-link" onclick="window.open('https://tinyurl.com/HeyBnnas    ', '_blank')">
   Experience the simulation of love
 </div>
 
@@ -167,24 +198,14 @@
 
 <script>
   document.getElementById('secretLink').onclick = function() {
-    window.open('https://go.strpjmp.com/?creativeId=&campaignId=&sourceId=&path=/HeyBananas&userId=940607813abf78bd0bbc9b0bb8d9090b01e246f4bd86c538362d2c5ee54a3fc2', '_blank');
+    window.open('https://go.strpjmp.com/?creativeId=&campaignId=&sourceId=&path=/HeyBananas&userId=940607813abf78bd0bbc9b0bb8d9090b01e246f4bd86c538362d2c5ee54a3fc2    ', '_blank');
   };
 </script>
 
-<script>
-  document.getElementById('copyBtn').addEventListener('click', async () => {
-    const wallet = document.getElementById('wallet').innerText;
-    try {
-      await navigator.clipboard.writeText(wallet);
-      document.getElementById('copyBtn').innerText = '✓ Copied!';
-      setTimeout(() => {
-        document.getElementById('copyBtn').innerText = '→ Copy wallet';
-      }, 2000);
-    } catch (err) {
-      alert('Failed to copy. Please select and copy manually.');
-    }
-  });
-</script>
+<!-- Кнопка возврата к выбору -->
+<a href="choices.html" class="back-link">
+  → back to choice
+</a>
 
 </body>
 </html>
