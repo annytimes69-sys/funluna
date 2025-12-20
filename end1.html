@@ -83,25 +83,37 @@
 </head>
 <body>
 
-<!-- Yandex.Metrika counter -->
+<!-- Yandex.Metrika counter (may be blocked by ad blockers) -->
 <script type="text/javascript">
-    (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=105914687    ', 'ym');
+  (function(m,e,t,r,i,k,a){
+    m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {
+      if (document.scripts[j].src === r) { return; }
+    }
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+  })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=105914687', 'ym');
 
-    ym(105914687, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+  ym(105914687, 'init', {
+    ssr: true,
+    webvisor: true,
+    clickmap: true,
+    ecommerce: "dataLayer",
+    accurateTrackBounce: true,
+    trackLinks: true
+  });
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/105914687    " style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript>
+  <div>
+    <img src="https://mc.yandex.ru/watch/105914687" style="position:absolute; left:-9999px;" alt="" />
+  </div>
+</noscript>
 <!-- /Yandex.Metrika counter -->
 
 <h1>Unreality Confirmed</h1>
 
 <img src="end1.png" alt="Xy’lthor-7 Observers in VR headsets">
-<h1>In a world of scripts, you chose to feel.
-That’s the only miracle this universe allows.</h1>
+<h1>In a world of scripts, you chose to feel.<br>That’s the only miracle this universe allows.</h1>
 
 <div class="text">
 >>> Executing: accepting unreality…
@@ -158,6 +170,18 @@ E-Coins go straight to the author’s wallet. 😉
     </button>
   </p>
 
+  <!-- Email -->
+  <p>
+    <strong>Email 📧</strong><br>
+    <code id="email" style="color: #aaa; background: rgba(255,255,255,0.05); padding: 4px 8px; border-radius: 3px; user-select: all;">annytimes69@gmail.com</code><br>
+    <button id="copyEmailBtn" class="support-btn" style="width: auto; margin-top: 6px; font-size: 0.95rem; padding: 6px 16px;">
+      → Copy Email
+    </button>
+  </p>
+  <p style="color: #999; font-size: 0.9rem; margin-top: 6px;">
+    If you'd like to contact the author—for thanks, questions, or just to say hi—this is the way.
+  </p>
+
   <!-- Telegram -->
   <p>
     <a href="https://t.me/cyberpunkstory" target="_blank" class="support-btn" style="width: auto; margin-top: 12px; text-decoration: none;">
@@ -175,7 +199,7 @@ E-Coins go straight to the author’s wallet. 😉
 </button>
 
 <script>
-  // Copy function — only for USDT now
+  // Copy USDT wallet
   document.getElementById('copyBtn').addEventListener('click', async () => {
     const wallet = document.getElementById('wallet').innerText;
     try {
@@ -183,6 +207,20 @@ E-Coins go straight to the author’s wallet. 😉
       document.getElementById('copyBtn').innerText = '✓ Copied!';
       setTimeout(() => {
         document.getElementById('copyBtn').innerText = '→ Copy Wallet';
+      }, 2000);
+    } catch (err) {
+      alert('Failed to copy. Please select and copy manually.');
+    }
+  });
+
+  // Copy email
+  document.getElementById('copyEmailBtn').addEventListener('click', async () => {
+    const email = document.getElementById('email').innerText;
+    try {
+      await navigator.clipboard.writeText(email);
+      document.getElementById('copyEmailBtn').innerText = '✓ Copied!';
+      setTimeout(() => {
+        document.getElementById('copyEmailBtn').innerText = '→ Copy Email';
       }, 2000);
     } catch (err) {
       alert('Failed to copy. Please select and copy manually.');
